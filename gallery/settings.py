@@ -38,7 +38,7 @@ SECRET_KEY = 'django-insecure-zkb45d=!yntz&#yw1@2fdk@-bbar3awc)#847=bk+@iqj#bs%7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True)
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://photo-gallery-10.herokuapp.com/','127.0.0.1']
 
 
 # Application definition

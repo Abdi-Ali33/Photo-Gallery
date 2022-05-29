@@ -8,9 +8,9 @@
 A personal gallery application that I display my photos for others to see.
 
 ## Screenshot
-![Screenshot](./screenshots/screenshot1.png)
-![Screenshot](./screenshots/screenshot2.png)
-![Screenshot](./screenshots/screenshot3.png)
+![Screenshot1](./screenshots/screenshot1.png)
+![Screenshot2](./screenshots/screenshot2.png)
+![Screenshot3](./screenshots/screenshot3.png)
 
 # Setup / Installation
 * clone the repo:

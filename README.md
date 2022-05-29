@@ -67,8 +67,7 @@ The following technologies have been used on this project:
 * View photos based on the location they were taken.  
 
 ## Live link
-
-
+[Here is the link to the live site](https://photo-gallery11.herokuapp.com/)
 
 
 # License

@@ -8,7 +8,7 @@ from cloudinary import CloudinaryImage
 # location model
 class Location(models.Model):
     name = models.CharField(max_length=100, unique=True)
-    slug = models.SlugField(max_length=100, null=TRUE, unique=True)
+    # slug = models.SlugField(max_length=100, null=TRUE, unique=True)
 
     # save location to database
     def save_location(self):
@@ -40,7 +40,7 @@ class Location(models.Model):
 # category model
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True)
-    slug = models.SlugField(max_length=100, null=TRUE, unique=True)
+    # slug = models.SlugField(max_length=100, null=TRUE, unique=True)
 
     # save category to database
     def save_category(self):

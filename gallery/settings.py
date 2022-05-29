@@ -98,8 +98,8 @@ else:
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
             'NAME': 'gallery',
-            'USER': config('DB_USER', default=''),
-            'PASSWORD': config('DB_PASSWORD', default=''),
+            'USER': config('DB_USER', default='postgres'),
+            'PASSWORD': config('DB_PASSWORD', default='sct221'),
         },
         'sqlite': {
             'ENGINE': 'django.db.backends.sqlite3',
@@ -160,9 +160,9 @@ CSRF_COOKIE_SECURE = False if ENV == 'development' else True
 
 # setup cloudinary credentials for django-cloudinary
 cloudinary.config(
-    cloud_name=config('CLOUDINARY_CLOUD_NAME', default=''),
-    api_key=config('CLOUDINARY_API_KEY', default=''),
-    api_secret=config('CLOUDINARY_API_SECRET', default=''),
+    cloud_name=config('CLOUDINARY_CLOUD_NAME', default='waberi33'),
+    api_key=config('CLOUDINARY_API_KEY', default='242373711326286'),
+    api_secret=config('CLOUDINARY_API_SECRET', default='PuUk1vItNok1vgHh8jd3ey2e5Os'),
     secure=True
 )
 

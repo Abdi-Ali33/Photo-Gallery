@@ -37,11 +37,6 @@ python -m venv virtual
 ```shell
 pip install -r requirements.txt 
 ```
-
-* setup environment variables
-```shell
-cp .env.example .env
-```
 * Execute the shell script and start the server
 ```shell
 python manage.py runserver

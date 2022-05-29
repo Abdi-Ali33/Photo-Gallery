@@ -38,7 +38,7 @@ SECRET_KEY = 'django-insecure-zkb45d=!yntz&#yw1@2fdk@-bbar3awc)#847=bk+@iqj#bs%7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True)
 
-ALLOWED_HOSTS = ['https://photo-gallery-10.herokuapp.com/','127.0.0.1']
+ALLOWED_HOSTS = ['photo-gallery11.herokuapp.com']
 
 
 # Application definition
@@ -89,25 +89,23 @@ WSGI_APPLICATION = 'gallery.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-if ENV == 'production':
-    DATABASES = {
-        'default': dj_database_url.config(default=config('DATABASE_URL'))
-    }
-else:
-    DATABASES = {
+# if ENV == 'production':
+#     DATABASES = {
+#         'default': dj_database_url.config(default=config('DATABASE_URL'))
+#     }
+# else:
+DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'gallery',
-            'USER': config('DB_USER', default='postgres'),
-            'PASSWORD': config('DB_PASSWORD', default='sct221'),
-        },
-        'sqlite': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
+            'NAME': 'd2h86stoq2qbeu',
+            'USER': 'nhkylaazwbxljz',
+            'PASSWORD': 'b703fbfa080beaf055a82066795f4e3f77a5bd83ddc03f0bb892d101ee8a6e0e',
+            'HOST':'ec2-34-230-153-41.compute-1.amazonaws.com',
+            'PORT':'5432',
     }
-db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
+}
+# db_from_env = dj_database_url.config(conn_max_age=600)
+# DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -165,6 +163,9 @@ cloudinary.config(
     api_secret=config('CLOUDINARY_API_SECRET', default='PuUk1vItNok1vgHh8jd3ey2e5Os'),
     secure=True
 )
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
+

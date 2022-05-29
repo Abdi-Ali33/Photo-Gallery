@@ -57,3 +57,11 @@ The following technologies have been used on this project:
 * Django
 * Python
 * Cloudinary (for image upload)
+
+## User Story  
+  
+* View different photos that interest them  
+* Click a single image to expand it and view the details of that photo  
+* Search for different categories   
+* Copy a link to the photo to share with my friends.  
+* View photos based on the location they were taken.  
